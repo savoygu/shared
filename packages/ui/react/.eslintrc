@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": [
+    "@savoygu/eslint-config-react",
+    "../../../.eslintrc"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
