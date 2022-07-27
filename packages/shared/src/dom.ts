@@ -1,11 +1,17 @@
 /**
  * 通用 DOM 操作
  */
-
+// From https://github.com/ElemeFE/element/blob/master/src/utils/dom.js
 const trim = function (string: string) {
   return (string || '').replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g, '')
 }
 
+/**
+ * 判断 DOM 元素是否含有 class
+ * @param el DOM 元素
+ * @param cls 类
+ * @returns
+ */
 export function hasClass(el: HTMLElement, cls: string) {
   if (!el || !cls) return false
   if (cls.indexOf(' ') !== -1)
@@ -17,6 +23,12 @@ export function hasClass(el: HTMLElement, cls: string) {
   }
 }
 
+/**
+ * 为 DOM 元素添加 class
+ * @param el DOM 元素
+ * @param cls 类
+ * @returns
+ */
 export function addClass(el: HTMLElement, cls: string) {
   if (!el) return
   let curClass = el.className
@@ -37,6 +49,12 @@ export function addClass(el: HTMLElement, cls: string) {
   }
 }
 
+/**
+ * 移除 DOM 元素 class
+ * @param el DOM 元素
+ * @param cls 类
+ * @returns
+ */
 export function removeClass(el: HTMLElement, cls: string) {
   if (!el || !cls) return
   const classes = cls.split(' ')
