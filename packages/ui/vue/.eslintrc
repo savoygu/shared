@@ -2,6 +2,6 @@
   "root": true,
   "extends": [
     "@savoygu/eslint-config-vue",
-    "../../../.eslintrc"
+    "../../../.eslintrc.json"
   ]
 }

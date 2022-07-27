@@ -7,12 +7,14 @@ importers:
       '@savoygu/eslint-config': ^0.3.1
       '@savoygu/eslint-config-prettier': ^0.3.1
       '@savoygu/prettier-config': ^0.3.1
+      '@savoygu/tsconfig': ^0.3.1
       eslint: ^8.20.0
       typescript: ^4.6.4
     devDependencies:
       '@savoygu/eslint-config': 0.3.1_eslint@8.20.0
       '@savoygu/eslint-config-prettier': 0.3.1_eslint@8.20.0
       '@savoygu/prettier-config': 0.3.1
+      '@savoygu/tsconfig': 0.3.1
       eslint: 8.20.0
       typescript: 4.7.4
 
@@ -1780,6 +1782,10 @@ packages:
 
   /@savoygu/prettier-config/0.3.1:
     resolution: {integrity: sha512-A9UYdw6VAfjqRQRC/ULqbBEDN7MRbXmy476j5t5KgMdP9zOG3UMju+svc88w9mafP8ffRbuQK9/QGWZtYug/pA==}
+    dev: true
+
+  /@savoygu/tsconfig/0.3.1:
+    resolution: {integrity: sha512-g7sTLQMr7Qwvl7LvEzoPh94SAICCPYDPgpJQKt9XulmJbWhMvoM7Sfb4vXvJlh6oZx38JCKVYImT6CwS9eyQUQ==}
     dev: true
 
   /@ts-morph/common/0.13.0:

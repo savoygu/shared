@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "@savoygu/eslint-config-prettier",
-    "@savoygu/eslint-config/plugins/jsonc"
-      ],
-  "ignorePatterns": [
-    "dist"
-  ]
-}
