@@ -1,8 +1,5 @@
 {
   "extends": "@savoygu/tsconfig/web.json",
-  "compilerOptions": {
-    "outDir": "dist"
-  },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [
     {

@@ -1,3 +1,4 @@
 {
-  "extends": "@savoygu/tsconfig/web.json"
+  "extends": "@savoygu/tsconfig/web.json",
+  "include": ["src/*.ts"]
 }

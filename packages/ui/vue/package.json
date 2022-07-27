@@ -1,7 +1,7 @@
 {
   "name": "@savoygu/shared-vue",
-  "version": "1.0.0",
-  "description": "Personal shared vue library, includes components、composable、directives etc.",
+  "version": "0.0.0",
+  "description": "Shared vue library, includes components、composable、directives etc.",
   "author": "savoygu <1029559886@qq.com>",
   "license": "MIT",
   "keywords": [
@@ -12,6 +12,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/shared-vue.umd.js",
       "import": "./dist/shared-vue.es.js"
     },
