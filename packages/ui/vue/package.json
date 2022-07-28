@@ -25,7 +25,9 @@
   "module": "dist/shared-vue.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@savoygu/shared-utils": "workspace:^0.0.0",

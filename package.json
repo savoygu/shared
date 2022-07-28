@@ -6,7 +6,8 @@
   "author": "savoygu <1029559886@qq.com>",
   "scripts": {
     "stub": "pnpm -r --parallel stub",
-    "build": "pnpm --filter \"./packages/**\" build"
+    "build": "pnpm --filter \"./packages/**\" build",
+    "test:shared": "vitest ./packages/shared"
   },
   "devDependencies": {
     "@savoygu/eslint-config": "^0.3.2",
