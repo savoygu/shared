@@ -4,17 +4,17 @@ importers:
 
   .:
     specifiers:
-      '@savoygu/eslint-config': ^0.3.1
-      '@savoygu/eslint-config-prettier': ^0.3.1
-      '@savoygu/prettier-config': ^0.3.1
-      '@savoygu/tsconfig': ^0.3.1
+      '@savoygu/eslint-config': ^0.3.2
+      '@savoygu/eslint-config-prettier': ^0.3.2
+      '@savoygu/prettier-config': ^0.3.2
+      '@savoygu/tsconfig': ^0.3.2
       eslint: ^8.20.0
-      typescript: ^4.6.4
+      typescript: ^4.7.4
     devDependencies:
-      '@savoygu/eslint-config': 0.3.1_eslint@8.20.0
-      '@savoygu/eslint-config-prettier': 0.3.1_eslint@8.20.0
-      '@savoygu/prettier-config': 0.3.1
-      '@savoygu/tsconfig': 0.3.1
+      '@savoygu/eslint-config': 0.3.2_eslint@8.20.0
+      '@savoygu/eslint-config-prettier': 0.3.2_eslint@8.20.0
+      '@savoygu/prettier-config': 0.3.2
+      '@savoygu/tsconfig': 0.3.2
       eslint: 8.20.0
       typescript: 4.7.4
 
@@ -26,20 +26,20 @@ importers:
 
   packages/ui/react:
     specifiers:
-      '@savoygu/eslint-config-react': ^0.3.1
+      '@savoygu/eslint-config-react': ^0.3.2
       '@types/react': ^18.0.15
       '@types/react-dom': ^18.0.6
       '@vitejs/plugin-react': ^2.0.0
       react: ^18.2.0
       react-dom: ^18.2.0
-      typescript: ^4.6.4
-      vite: ^3.0.0
+      typescript: ^4.7.4
+      vite: ^3.0.3
       vite-plugin-dts: ^1.4.0
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@savoygu/eslint-config-react': 0.3.1_typescript@4.7.4
+      '@savoygu/eslint-config-react': 0.3.2_typescript@4.7.4
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
       '@vitejs/plugin-react': 2.0.0_vite@3.0.3
@@ -49,20 +49,20 @@ importers:
 
   packages/ui/vue:
     specifiers:
-      '@savoygu/eslint-config-vue': ^0.3.1
+      '@savoygu/eslint-config-vue': ^0.3.2
       '@savoygu/shared-utils': workspace:^0.0.0
-      '@vitejs/plugin-vue': ^3.0.0
+      '@vitejs/plugin-vue': ^3.0.1
       sass: ^1.54.0
-      typescript: ^4.6.4
-      vite: ^3.0.0
+      typescript: ^4.7.4
+      vite: ^3.0.3
       vite-plugin-dts: ^1.4.0
       vue: ^3.2.37
-      vue-tsc: ^0.38.4
+      vue-tsc: ^0.38.9
     dependencies:
       '@savoygu/shared-utils': link:../../shared
       vue: 3.2.37
     devDependencies:
-      '@savoygu/eslint-config-vue': 0.3.1_typescript@4.7.4
+      '@savoygu/eslint-config-vue': 0.3.2_typescript@4.7.4
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.3+vue@3.2.37
       sass: 1.54.0
       typescript: 4.7.4
@@ -1684,8 +1684,8 @@ packages:
       string-argv: 0.3.1
     dev: true
 
-  /@savoygu/eslint-config-prettier/0.3.1_eslint@8.20.0:
-    resolution: {integrity: sha512-q7BwAgzyss19X0nEVayIm+87Lc/3kIpnfTg/XCw9UfWx1rHBHE7n6585XiHc5H+R+vAqa6/RAKjY2Nsa1l1y0Q==}
+  /@savoygu/eslint-config-prettier/0.3.2_eslint@8.20.0:
+    resolution: {integrity: sha512-TEIxBZqsfh+wKBzM0EYrhgnu58L4dNTgxYCu6SOS848cQqo3RfrMrMQqBPBzimTIfCv4/VE5BJ6iILfE/kHNFQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
@@ -1696,12 +1696,12 @@ packages:
       prettier: 2.7.1
     dev: true
 
-  /@savoygu/eslint-config-react/0.3.1_typescript@4.7.4:
-    resolution: {integrity: sha512-BYTIct06EYAgu2tVE2BApgxbXvpR6w9/I3CWMdW32M+v4jErolS9lTTHYiP2Tb280AInB7aLPnH1iBia3Vz28w==}
+  /@savoygu/eslint-config-react/0.3.2_typescript@4.7.4:
+    resolution: {integrity: sha512-uqBM53lI6qRIjCLWw27/Lomz/daCbTexmczJBns5mrzlKRBg/qoIrQMWqlwUtg54Sm9VyosQnFFM2jvyD/iWFw==}
     peerDependencies:
       eslint: '>=7.28.0'
     dependencies:
-      '@savoygu/eslint-config': 0.3.1
+      '@savoygu/eslint-config': 0.3.2
       eslint-config-react-app: 7.0.1_typescript@4.7.4
       eslint-plugin-jsx-a11y: 6.6.1
       eslint-plugin-react: 7.30.1
@@ -1716,13 +1716,13 @@ packages:
       - typescript
     dev: true
 
-  /@savoygu/eslint-config-vue/0.3.1_typescript@4.7.4:
-    resolution: {integrity: sha512-uWAsCepbaHhDIAfMj8pj3hYJhy0zjkw4pu/ZcrZP6pDxeSaKrUovtAgSO/KgmQija5gPmScRaAgbBnkju5j4wg==}
+  /@savoygu/eslint-config-vue/0.3.2_typescript@4.7.4:
+    resolution: {integrity: sha512-v6eVd+rAVayulUgCWShGOd8/l/JwllVI3e4Xf3bsd4+3/UV5ZTROzq6lOl5WteGg96kUL8wPODijcZh3pbiQhQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
     dependencies:
-      '@savoygu/eslint-config': 0.3.1
+      '@savoygu/eslint-config': 0.3.2
       '@vue/eslint-config-typescript': 11.0.0_gddp3u5jlwbv7sseu5y7nyb5zm
       eslint-plugin-vue: 8.7.1
     transitivePeerDependencies:
@@ -1731,8 +1731,8 @@ packages:
       - typescript
     dev: true
 
-  /@savoygu/eslint-config/0.3.1:
-    resolution: {integrity: sha512-+j4V/Ue7VZnNAKuXVjtiMA2mAUM2b0DedgM5Ol1kMOReIwomwE9VGDmIfdXD49WD1AbDBZsIFoS/v1liDxVgaA==}
+  /@savoygu/eslint-config/0.3.2:
+    resolution: {integrity: sha512-DKsxbhQQB/kktdMx6ELk5+zwKf+cgh1GAHSv9oQ+KdawmkWQ6b383480flR+M9+FoMxhfnG7wh/SdTqLkc28gA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
@@ -1755,8 +1755,8 @@ packages:
       - supports-color
     dev: true
 
-  /@savoygu/eslint-config/0.3.1_eslint@8.20.0:
-    resolution: {integrity: sha512-+j4V/Ue7VZnNAKuXVjtiMA2mAUM2b0DedgM5Ol1kMOReIwomwE9VGDmIfdXD49WD1AbDBZsIFoS/v1liDxVgaA==}
+  /@savoygu/eslint-config/0.3.2_eslint@8.20.0:
+    resolution: {integrity: sha512-DKsxbhQQB/kktdMx6ELk5+zwKf+cgh1GAHSv9oQ+KdawmkWQ6b383480flR+M9+FoMxhfnG7wh/SdTqLkc28gA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
@@ -1780,12 +1780,12 @@ packages:
       - supports-color
     dev: true
 
-  /@savoygu/prettier-config/0.3.1:
-    resolution: {integrity: sha512-A9UYdw6VAfjqRQRC/ULqbBEDN7MRbXmy476j5t5KgMdP9zOG3UMju+svc88w9mafP8ffRbuQK9/QGWZtYug/pA==}
+  /@savoygu/prettier-config/0.3.2:
+    resolution: {integrity: sha512-2WNWlJLtTJ/CmukUmt5EKABVMngOQVNGWy8HZd8UqPFw+pxoXXHD2i9CWvvOynLmqUdG2dE2pXSRRUri9fk7/w==}
     dev: true
 
-  /@savoygu/tsconfig/0.3.1:
-    resolution: {integrity: sha512-g7sTLQMr7Qwvl7LvEzoPh94SAICCPYDPgpJQKt9XulmJbWhMvoM7Sfb4vXvJlh6oZx38JCKVYImT6CwS9eyQUQ==}
+  /@savoygu/tsconfig/0.3.2:
+    resolution: {integrity: sha512-Z3xxN8E5hmz08ExlvMpauLfk3iGeX4AIW2oVRbSsaTDOuTvE2xmPZfLMhGPy+4R99af6v7S1QTHwQAyc3SIYyQ==}
     dev: true
 
   /@ts-morph/common/0.13.0:
@@ -5601,7 +5601,7 @@ packages:
       fast-glob: 3.2.11
       fs-extra: 10.1.0
       ts-morph: 14.0.0
-      vite: 3.0.3
+      vite: 3.0.3_sass@1.54.0
     transitivePeerDependencies:
       - supports-color
     dev: true
