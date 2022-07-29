@@ -1,9 +1,9 @@
 {
   "files": [],
   "references": [
-    { "path": "./packages/shared" },
-    { "path": "./packages/ui/vue" },
-    { "path": "./packages/ui/react" },
+    { "path": "./packages/shared/src" },
+    { "path": "./packages/ui/vue/src" },
+    { "path": "./packages/ui/react/src" },
     { "path": "./tsconfig.test.json" },
     { "path": "./tsconfig.node.json" }
   ]

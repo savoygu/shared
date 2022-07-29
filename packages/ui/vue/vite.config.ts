@@ -9,8 +9,13 @@ const resolve = (...args: string[]) => _resolve(__dirname, ...args)
 export default defineConfig({
   resolve: {
     alias: {
-      core: resolve('src')
+      '@shared/vue': resolve(__dirname, 'src')
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './test/setup.ts'
   },
   build: {
     lib: {

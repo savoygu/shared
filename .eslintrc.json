@@ -3,5 +3,11 @@
     "@savoygu/eslint-config/plugins/jsonc",
     "@savoygu/eslint-config-prettier"
   ],
-  "ignorePatterns": ["dist"]
+  "ignorePatterns": ["dist"],
+  "overrides": [
+    {
+      "files": ["vitest.config.ts"],
+      "extends": ["@savoygu/eslint-config/typescript"]
+    }
+  ]
 }

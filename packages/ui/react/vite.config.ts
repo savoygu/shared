@@ -7,6 +7,11 @@ const resolve = (...args: string[]) => _resolve(__dirname, ...args)
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@shared/react': resolve(__dirname, 'src')
+    }
+  },
   build: {
     lib: {
       entry: resolve('src/index.tsx'),

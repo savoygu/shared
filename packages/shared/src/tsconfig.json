@@ -1,0 +1,7 @@
+{
+  "extends": "@savoygu/tsconfig/web.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "."
+  }
+}

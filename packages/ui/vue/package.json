@@ -25,7 +25,9 @@
   "module": "dist/shared-vue.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@savoygu/shared-utils": "workspace:^0.0.0",
@@ -33,7 +35,11 @@
   },
   "devDependencies": {
     "@savoygu/eslint-config-vue": "^0.3.5",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/vue": "^6.6.1",
     "@vitejs/plugin-vue": "^3.0.1",
+    "c8": "^7.12.0",
+    "eslint": "^8.20.0",
     "sass": "^1.54.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.3",

@@ -3,10 +3,23 @@
   "compilerOptions": {
     "composite": true,
     "paths": {
+      // "@shared/utils": ["./packages/shared/src"],
       "@shared/utils/*": ["./packages/shared/src/*"],
+      "@shared/react": ["./packages/ui/react/src"],
       "@shared/react/*": ["./packages/ui/react/src/*"],
+      "@shared/vue": ["./packages/ui/vue/src"],
       "@shared/vue/*": ["./packages/ui/vue/src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
-  "include": ["**/test/**/*.test.ts"]
+  "include": [
+    "./packages/**/test/**/*.test.ts",
+    "./packages/**/test/**/*.test.vue",
+    "./packages/ui/vue/src/vite-env.d.ts"
+  ],
+  "references": [
+    { "path": "./packages/shared/src" },
+    { "path": "./packages/ui/react/src" },
+    { "path": "./packages/ui/vue/src" }
+  ]
 }
