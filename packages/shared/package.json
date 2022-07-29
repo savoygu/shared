@@ -30,6 +30,8 @@
     "build": "unbuild"
   },
   "devDependencies": {
+    "@savoygu/eslint-config": "^0.3.5",
+    "eslint": "^8.20.0",
     "unbuild": "^0.7.6"
   }
 }

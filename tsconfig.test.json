@@ -1,0 +1,12 @@
+{
+  "extends": "@savoygu/tsconfig/web.json",
+  "compilerOptions": {
+    "composite": true,
+    "paths": {
+      "@shared/utils/*": ["./packages/shared/src/*"],
+      "@shared/react/*": ["./packages/ui/react/src/*"],
+      "@shared/vue/*": ["./packages/ui/vue/src/*"]
+    }
+  },
+  "include": ["**/test/**/*.test.ts"]
+}

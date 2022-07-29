@@ -1,4 +1,7 @@
 {
   "extends": "@savoygu/tsconfig/web.json",
-  "include": ["src/*.ts"]
+  "compilerOptions": {
+    "composite": true
+  },
+  "include": ["src"]
 }

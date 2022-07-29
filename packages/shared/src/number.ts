@@ -5,5 +5,5 @@
  */
 // from https://stackoverflow.com/a/2901298/
 export const numberWithCommas = (num: number) => {
-  return num.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
+  return `${num}`.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')
 }

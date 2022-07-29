@@ -14,12 +14,11 @@ const trim = function (string: string) {
  */
 export function hasClass(el: HTMLElement, cls: string) {
   if (!el || !cls) return false
-  if (cls.indexOf(' ') !== -1)
-    throw new Error('className should not contain space.')
+  if (cls.includes(' ')) throw new Error('className should not contain space.')
   if (el.classList) {
     return el.classList.contains(cls)
   } else {
-    return (' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1
+    return (' ' + el.className + ' ').includes(' ' + cls + ' ')
   }
 }
 
