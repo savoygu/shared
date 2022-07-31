@@ -12,7 +12,9 @@ export default defineConfig({
       '@shared/react': resolve(__dirname, 'src')
     }
   },
+  root: resolve('src'),
   build: {
+    outDir: resolve('dist'),
     lib: {
       entry: resolve('src/index.tsx'),
       name: 'SASharedReact',

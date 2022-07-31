@@ -1,0 +1,10 @@
+{
+  "extends": "@savoygu/tsconfig/web.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "../dist/.tsbuildinfo",
+    "rootDir": ".",
+    "jsx": "preserve"
+  },
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue"]
+}

@@ -1,0 +1,22 @@
+{
+  "extends": "@savoygu/tsconfig/web.json",
+  "compilerOptions": {
+    "composite": true,
+    "paths": {
+      "@shared/utils": ["./packages/shared/src/index.ts"],
+      "@shared/utils/*": ["./packages/shared/src/*"],
+      "@shared/react": ["./packages/ui/react/src/index.tsx"],
+      "@shared/react/*": ["./packages/ui/react/src/*"],
+      "@shared/vue": ["./packages/ui/vue/src/index.ts"],
+      "@shared/vue/*": ["./packages/ui/vue/src/*"]
+    },
+    "jsx": "preserve",
+    "types": ["vitest/globals"]
+  },
+  "include": ["./packages/**/test/**/*.ts", "./packages/**/test/**/*.tsx"],
+  "references": [
+    { "path": "./packages/shared/src" },
+    { "path": "./packages/ui/react/src" },
+    { "path": "./packages/ui/vue/src" }
+  ]
+}

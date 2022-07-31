@@ -18,9 +18,9 @@
   "module": "dist/shared-react.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && vite build",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "build": "tsc --noEmit --project ./src/tsconfig.json && vite build",
+    "test": "vitest --root ./",
+    "coverage": "vitest --root ./ run --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",

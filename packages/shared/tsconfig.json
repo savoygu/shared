@@ -1,7 +1,0 @@
-{
-  "extends": "@savoygu/tsconfig/web.json",
-  "compilerOptions": {
-    "rootDir": "./src"
-  },
-  "include": ["./src"]
-}

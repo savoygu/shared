@@ -8,32 +8,33 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
+      "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
     "./dom": {
       "types": "./dist/dom.d.ts",
-      "require": "./dist/dom.cjs",
+      "require": "./dist/dom.js",
       "import": "./dist/dom.mjs"
     },
     "./number": {
       "types": "./dist/number.d.ts",
-      "require": "./dist/number.cjs",
+      "require": "./dist/number.js",
       "import": "./dist/number.mjs"
     }
   },
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "stub": "unbuild --stub",
-    "build": "unbuild",
+    "watch": "tsup --watch",
+    "build": "tsc --noEmit && tsup",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@savoygu/eslint-config": "^0.3.5",
     "eslint": "^8.20.0",
+    "tsup": "^6.2.1",
     "unbuild": "^0.7.6"
   }
 }

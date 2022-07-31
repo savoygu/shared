@@ -1,0 +1,4 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "vue" , "json", "jsonc", "json5"],
+  "typescript.validate.enable": true
+}

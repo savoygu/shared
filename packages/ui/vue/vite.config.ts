@@ -19,7 +19,9 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './test/setup.ts'
   },
+  root: resolve('src'),
   build: {
+    outDir: resolve('dist'),
     lib: {
       entry: resolve('src/index.ts'),
       name: 'SASharedVue',
