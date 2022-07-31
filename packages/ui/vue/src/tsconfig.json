@@ -1,8 +1,0 @@
-{
-  "extends": "@savoygu/tsconfig/web.json",
-  "compilerOptions": {
-    "composite": true,
-    "rootDir": "."
-  },
-  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
-}

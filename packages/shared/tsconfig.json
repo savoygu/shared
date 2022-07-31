@@ -1,8 +1,7 @@
 {
   "extends": "@savoygu/tsconfig/web.json",
   "compilerOptions": {
-    "composite": true,
-    "jsx": "react-jsx",
-    "rootDir": "."
-  }
+    "rootDir": "./src"
+  },
+  "include": ["./src"]
 }
