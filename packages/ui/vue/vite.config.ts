@@ -22,6 +22,7 @@ export default defineConfig({
   root: resolve('src'),
   build: {
     outDir: resolve('dist'),
+    emptyOutDir: false,
     lib: {
       entry: resolve('src/index.ts'),
       name: 'SASharedVue',

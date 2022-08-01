@@ -11,7 +11,7 @@ export default defineComponent({
   props: {
     transitionClass: {
       type: String,
-      default: 'sa-collapse-transition'
+      default: 'sh-collapse-transition'
     }
   },
   setup(props) {
@@ -87,7 +87,3 @@ export default defineComponent({
     <slot></slot>
   </transition>
 </template>
-
-<style lang="scss">
-@import './collapse-transition.scss';
-</style>

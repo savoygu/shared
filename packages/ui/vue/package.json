@@ -16,16 +16,19 @@
       "require": "./dist/shared-vue.umd.js",
       "import": "./dist/shared-vue.es.js"
     },
-    "./style.css": {
-      "require": "./dist/style.css",
-      "import": "./dist/style.css"
+    "./style/index.css": {
+      "require": "./dist/style/index.css",
+      "import": "./dist/style/index.css"
     }
   },
   "main": "dist/shared-vue.umd.js",
   "module": "dist/shared-vue.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "vue-tsc --noEmit --project ./src/tsconfig.json && vite build",
+    "clean": "rimraf dist",
+    "build:shared": "vue-tsc --noEmit --project ./src/tsconfig.json && vite build",
+    "build:style": "gulp --require @esbuild-kit/cjs-loader",
+    "build": "run-s clean build:style build:shared",
     "test": "vitest --root ./",
     "coverage": "vitest --root ./ run --coverage"
   },
@@ -34,6 +37,7 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@esbuild-kit/cjs-loader": "^2.3.2",
     "@savoygu/eslint-config-vue": "^0.3.5",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/vue": "^6.6.1",
@@ -41,9 +45,18 @@
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.37",
     "c8": "^7.12.0",
+    "consola": "^2.15.3",
     "eslint": "^8.20.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
     "jsdom": "^20.0.0",
+    "picocolors": "^1.0.0",
     "sass": "^1.54.0",
+    "sass-bem-next": "^3.1.1",
+    "sass-config": "^1.1.2",
     "typescript": "^4.7.4",
     "vite": "^3.0.3",
     "vite-plugin-dts": "^1.4.0",
