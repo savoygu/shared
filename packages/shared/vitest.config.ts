@@ -7,5 +7,8 @@ export default defineConfig({
       '@shared/utils': resolve(__dirname, 'src')
     }
   },
-  test: {}
+  test: {
+    globals: true,
+    environment: 'jsdom'
+  }
 })

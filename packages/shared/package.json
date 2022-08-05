@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@savoygu/eslint-config": "^0.3.5",
+    "@testing-library/dom": "^8.16.1",
     "eslint": "^8.20.0",
     "tsup": "^6.2.1"
   }
