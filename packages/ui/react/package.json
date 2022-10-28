@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "@savoygu/shared-react",
   "type": "module",
   "version": "0.0.0",
   "description": "Shared react library, includes components、hooks etc.",
